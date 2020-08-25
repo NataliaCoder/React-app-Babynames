@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import BabyNamesData from "./babyNamesData.json";
 
 function App() {
   return (
@@ -18,6 +19,11 @@ function App() {
         >
           Learn React
         </a>
+        <div className="babyNames">
+{el.sex === "m" ?  BabyNamesData.map((el, id)=>el.name + " ") className = "boy" : className = "girl"}
+
+       
+</div>
       </header>
     </div>
   );
