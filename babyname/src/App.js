@@ -1,29 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import BabyNamesData from "./babyNamesData.json";
+import BabyNames from './BabyNames';
+import babyNamesData from "./babyNamesData.json"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <div className="babyNames">
-{el.sex === "m" ?  BabyNamesData.map((el, id)=>el.name + " ") className = "boy" : className = "girl"}
+<p>Favourites:</p>
 
-       
-</div>
+        <BabyNames names={babyNamesData} />
       </header>
     </div>
   );
