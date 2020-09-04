@@ -8,8 +8,9 @@
   
 }
 .www {
-  width: auto;
-  border: 5px solid green;
+  width: 350px;
+  height: 35px;
+  border: 2px solid black;
 
 }
 .App-logo {
@@ -24,6 +25,7 @@ margin: 5px;
 }
 .girl {
 color: palevioletred;
+padding: 5px;
 background-color: lightpink;
 border-radius: 5px;
 margin: 5px;
