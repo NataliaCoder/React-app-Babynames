@@ -65,6 +65,8 @@ const BabyNames = (props) => {
 
   return (
     <div>
+  <p>Choose your baby's name</p>
+
       <div className="babyNames">
       <p className="favourites">Favourites:</p>
         {favouriteNames.map((el) => {
