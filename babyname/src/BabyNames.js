@@ -66,7 +66,7 @@ const BabyNames = (props) => {
   return (
     <div>
       <div className="babyNames">
-        Favourites:
+      <p className="favourites">Favourites:</p>
         {favouriteNames.map((el) => {
           let textColor = el.sex === "m" ? "boy" : "girl";
           return (
