@@ -17,14 +17,12 @@
   border: 2px solid black;
 }
 .input_line {
-  text-align: center;
 display: flex;
 align-items: center;
+padding: 20px;
 }
-.radio_button {
-  background-size: 10px;
-  
-
+.input_title {
+  font-size: 20px;
 }
 .favourites {
   font-size: 25px;
@@ -47,3 +45,22 @@ background-color: lightpink;
 border-radius: 5px;
 margin: 5px;
 }
+
+.radio_btn input[type="radio"] {
+  display: none;
+}
+.radio_btn label {
+  padding: 5px;
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  user-select: none;
+}
+/* Checked */
+.radio_btn input[type="radio"]:checked + label {
+  background: lightgrey;
+}
+/* Hover */
+.radio_btn label:hover {
+  color: #666;
+} 
